@@ -17,7 +17,10 @@ const CAMPAIGN_ID_AVIASALES = '100';
 const CAMPAIGN_ID_HOTELLOOK = '101';
 
 // Настройка CORS. Адрес фронтенда мы добавим сюда на самом последнем шаге.
-const allowedOrigins = [ 'http://localhost:5173' ];
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://vputi.vercel.app' // <<< Вставь сюда ссылку из Этапа 2
+];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
